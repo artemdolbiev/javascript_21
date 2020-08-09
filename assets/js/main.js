@@ -26,7 +26,7 @@ console.log('Task#2');
  */
 
  function replaceHTMLComments(str) {
-    return str.replace(/\<\!\-\-*.*?\-\-\>\s*/g, '');
+    return str.replace(/\<\!\-\-*.*?\-\-\>\s*/g, '').trim();
  }
 console.log(replaceHTMLComments('<!--коммент1--> код без комментов <!--коммент2-->')); // код без комментов
 console.log(replaceHTMLComments('<!--к1--> код <!-- к2 --><!-- к3 --> без <!-- к4 --> комментов')); // код без комментов
